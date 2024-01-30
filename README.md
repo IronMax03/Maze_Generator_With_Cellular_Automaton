@@ -11,7 +11,7 @@ The CA begin with a randomized grid. Black cells are walls and the white ones ar
 The edges of this grid are walls except for one exit and one entrance. 
 Then the CA starts and organize the randomize grid in an acceptable maze patterns. 
 After a certain amount of iterations the CA stops giving the resulting maze.
-This CA work like The [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) by using a set of rule on each cell to determine the next state of this cell.
+This CA work like The Conway's Game of Life by using a set of rule on each cell to determine the next state of this cell.
 In one special case a rule is only considered after 10 generation. 
 This has been found testing and is entirely empirical. 
 This value is probably not the best but works good.
