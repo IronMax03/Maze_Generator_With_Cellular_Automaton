@@ -15,8 +15,8 @@ The CA begin whith a randomized grid. Black cells are walls and the white ones a
 
 ### Neighborhood
 This cellular automaton use 2 different neighborhoods.
-The first one is a classical [Von Neumann Neighborhood](https://en.wikipedia.org/wiki/Von_Neumann_neighborhood).
-And the second counts diagonol Neighboors.
+The first one is a the [Von Neumann Neighborhood](https://en.wikipedia.org/wiki/Von_Neumann_neighborhood).
+And the second counts the Neighboors in diagonol cells.
 
 ### The Rules
 
