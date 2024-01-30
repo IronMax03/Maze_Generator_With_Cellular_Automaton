@@ -10,7 +10,7 @@ It was in 2020 when I was learning Java. I had an homework wich was to creat a m
 The CA begin whith a randomized grid. Black cells are walls and the white ones are coridores. The edges of this grid are walls excepte for one exit and one entrence. Then the CA starts and organize the randomize grid in a acceptable maze parterns. After a certain amout of iterations the CA stops giving the resulting maze.
 
 <p align="center">
-  <img src="README_files/MazeGeneratorDemo.gif" alt="Demo Maze Generator">
+  <img src="README_files/MazeGeneratorDemo.gif" alt="Demo Maze Generator" width="550">
 </p>
 
 ### Neighborhood
