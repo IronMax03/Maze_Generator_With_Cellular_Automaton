@@ -22,6 +22,9 @@ The first one is a classical [Von Neumann Neighborhood](https://en.wikipedia.org
 
 ## Usage
 
+This project runs under Oracle [OpenJDK 20](https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html).
+
+
 ## Acknowledgments
 
 [View Conway's Game of Life project in Java by someone else](https://github.com/leonpetrinos/GameOfLifeJavaFX)
