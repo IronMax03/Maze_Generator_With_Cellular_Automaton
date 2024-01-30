@@ -6,8 +6,6 @@ public class mazeGenerator
     private Grid maze;
     private short Size;
     private short stepsCount;
-    private short DNCount; // diagonal neighborhood count
-    private short NNCount; // neumann neighborhood count
 
     public mazeGenerator(int Size)
     {
