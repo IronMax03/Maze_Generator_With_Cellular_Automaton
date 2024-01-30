@@ -28,4 +28,5 @@ This project runs under Oracle [OpenJDK 20](https://www.oracle.com/java/technolo
 ## Acknowledgments
 
 [View Conway's Game of Life project in Java by someone else](https://github.com/leonpetrinos/GameOfLifeJavaFX)
+<br>
 [Other Cellular Automaton Maze Generator ](https://conwaylife.com/wiki/OCA:Maze#Mazectric)
