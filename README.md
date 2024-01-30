@@ -25,7 +25,7 @@ This value is probably not the best but works good.
 This cellular automaton use 2 different neighborhoods.
 The first one is a [Von Neumann Neighborhood](https://en.wikipedia.org/wiki/Von_Neumann_neighborhood).
 And the second counts the Neighbors in diagonal cells(I did not find any name for this Neighborhood in my research. Because of this I will simply continue to name it `diagonal Neighborhood`).
-For some rules we are going to need the sum of Von Neumann Neighborhood and diagonal cells forming a [Moore neighborhood](https://en.wikipedia.org/wiki/Moore_neighborhood)(This word will be used later in this section to simplify)
+For some rules we are going to need the sum of Von Neumann Neighborhood and diagonal cells forming a [Moore neighborhood](https://en.wikipedia.org/wiki/Moore_neighborhood)(This word will be used later in this section to simplify).
 
 ### The Rules
 1. The first step is to get the state of the current cell. 
