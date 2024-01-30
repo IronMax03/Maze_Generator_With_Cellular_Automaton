@@ -1,13 +1,19 @@
 # Maze Generator With Cellular Automaton
+A maze generator implemented using Cellular Automaton (CA) inspired by Conway's Game of Life.
 
 ## Introduction
 
+### Project Background
 This an old project I used as an HelloWorld for my gitHub.
-It was in 2020 when I was learning Java. I had a homework which was to create a maze generator. I came up with solution using a [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton)(Also called CA) inspired by the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). After going back on the project and doing some reasearch on the subject I discovered half of my solution was already existing. I created this repository to share this fun aproach of maze generator.
-<br>
+It was in 2020 when I was learning Java. I had a homework which was to create a maze generator. I came up with solution using a [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton)(Also called CA) inspired by the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). 
+My idea was find some CA rules which keep the paterns that actually made the gride look like a maze and invert the cell state if the patern isnt apropriete.
+The process of finding this rules was to draw on a peace of paper all the maze paterns that came to mind and trying to describe them whith the Neighborhood count(this will be detailled later in this page). Then I tried those rules and did played whith it to see if a could get a better result. This aproach using both rational and empirical aproach aloud me getting a good result.
+I created this repository to share this fun aproach of maze generator.
+
 
 ### Algorithm
 The CA begin with a randomized grid. Black cells are walls and the white ones are corridors. 
+The noise generator used in the project is simply a Boolean 2D array whith a probability of $\frac{1}{2}$  being true and $\frac{1}{2}$ being false.
 The edges of this grid are walls except for one exit and one entrance. 
 Then the CA starts and organize the randomize grid in an acceptable maze patterns. 
 After a certain amount of iterations the CA stops giving the resulting maze.
@@ -42,7 +48,9 @@ Each state as a set of rules which determine the state of the cell for the next 
 This project is designed to run with Oracle [OpenJDK 20](https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html).
 
 ### Running the Project
-To compile the project and then execute the "Main.java" File. A window will appear with the randomize grid. The CA should start 4 seconds after the randomize grid.
+To compile the project and then execute the "Main.java" File. 
+A window will appear with the randomize grid. The CA should start 4 seconds after the randomize grid.
+After a certain amount of generation the CA will stop allowing you to
 
 
 ## Acknowledgments
