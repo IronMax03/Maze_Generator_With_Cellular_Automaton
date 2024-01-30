@@ -31,6 +31,8 @@ To compile the project and then execute the "Main.java" File. A window will apea
 
 ## Acknowledgments
 
+[Cellular automaton wiki](https://en.wikipedia.org/wiki/Cellular_automaton)
+<br>
 [View Conway's Game of Life project in Java by someone else](https://github.com/leonpetrinos/GameOfLifeJavaFX)
 <br>
 [Other Cellular Automaton Maze Generator ](https://conwaylife.com/wiki/OCA:Maze#Mazectric)
