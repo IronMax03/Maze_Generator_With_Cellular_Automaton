@@ -9,6 +9,7 @@ The CA begin whith a randomized grid. Black cells are walls and the white ones a
 <p align="center">
   <img src="README_files/MazeGeneratorDemo.gif" alt="Demo Maze Generator">
 </p>
+
 ## Neighborhood
 This cellular automaton use 2 different neighborhoods.
 The first one is a classical [Von Neumann Neighborhood](https://en.wikipedia.org/wiki/Von_Neumann_neighborhood).
