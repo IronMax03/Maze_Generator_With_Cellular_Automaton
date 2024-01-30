@@ -23,7 +23,10 @@ And the second counts diagonol Neighboors.
 
 ## Usage
 
-This project runs under Oracle [OpenJDK 20](https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html).
+This project is designed to run with Oracle [OpenJDK 20](https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html).
+
+### Running the Project
+To compile the project and then execute the "Main.java" File. A window will apear whith the randomize grid. The CA should start 4 secons after the randomize grid.
 
 
 ## Acknowledgments
