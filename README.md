@@ -12,19 +12,21 @@ I created this repository to share this fun aproach of maze generator.
 
 
 ### Algorithm
-The CA begin with a randomized grid. Black cells are walls and the white ones are corridors. 
+- The CA begin with a randomized grid. Black cells are walls and the white ones are corridors. 
 The noise generator used in the project is simply a Boolean 2D array whith a probability of $\frac{1}{2}$  being true and $\frac{1}{2}$ being false.
 The edges of this grid are walls except for one exit and one entrance. 
-Then the CA starts and organize the randomize grid in an acceptable maze patterns. 
+- Then the CA starts and organize the randomize grid in an acceptable maze patterns. 
 After a certain amount of iterations the CA stops giving the resulting maze.
-This CA work like The Conway's Game of Life by using a set of rule on each cell to determine the next state of this cell.
-In one special case a rule is only considered after 10 generation. 
+- This CA work like The Conway's Game of Life by using a set of rule on each cell to determine the next state of this cell.
+- In one special case a rule is only considered after 10 generation. 
 This has been found testing and is entirely empirical. 
 This value is probably not the best but works good.
 
 
 <p align="center">
   <img src="README_files/MazeGeneratorDemo.gif" alt="Demo Maze Generator" width="550">
+  <br>
+  <em>Demo of the Maze Generator in action</em>
 </p>
 
 ### Neighborhood
@@ -48,15 +50,22 @@ Each state as a set of rules which determine the state of the cell for the next 
 This project is designed to run with Oracle [OpenJDK 20](https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html).
 
 ### Running the Project
-To compile the project and then execute the "Main.java" File. 
-A window will appear with the randomize grid. The CA should start 4 seconds after the randomize grid.
-After a certain amount of generation the CA will stop allowing you to
+1. To compile the project and then execute the "Main.java" File.
+2. A window will appear with the randomize grid.
+3. The CA should start 4 seconds after the randomize grid.
+4. After a certain amount of generation the CA will stop allowing you to
 
 
 ## Acknowledgments
 
-[Cellular automaton wiki](https://en.wikipedia.org/wiki/Cellular_automaton)
+[more on Von Neumann Neighborhood](https://en.wikipedia.org/wiki/Von_Neumann_neighborhood)
+<br>
+[more on Moore neighborhood](https://en.wikipedia.org/wiki/Moore_neighborhood)
+<br>
+[more on Cellular automatons](https://en.wikipedia.org/wiki/Cellular_automaton)
+<br>
+[more on Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 <br>
 [View Conway's Game of Life project in Java by someone else](https://github.com/leonpetrinos/GameOfLifeJavaFX)
 <br>
-[Other Cellular Automaton Maze Generator ](https://conwaylife.com/wiki/OCA:Maze#Mazectric)
+[Other Cellular Automatons creating mazes](https://conwaylife.com/wiki/OCA:Maze#Mazectric)
