@@ -1,11 +1,18 @@
 /**
+ * The `Main` class serves as the entry point for the Maze Generator application.
+ * It creates an instance of the `mazeGenerator` class, initializes the maze, introduces a delay, and then runs the Cellular Automaton rules to generate a maze.
+ *
  * @author Maximilien Notz
  */
 public class Main
 {
+    /**
+     * The main method, serving as the entry point for the Maze Generator application.
+     *
+     * @param args The command-line arguments (not used in this application).
+     */
     public static void main(String[] args)
     {
-        runTestCases();
         mazeGenerator mazeGen = new mazeGenerator(100);
 
         try
@@ -18,19 +25,5 @@ public class Main
         }
 
         mazeGen.runRules(50);
-    }
-
-
-    private static void runTestCases()
-    {
-        //test cases Stack
-        Stack MyStack = new Stack<Integer>();
-        assert(MyStack.isEmpty());
-        MyStack.push(1);
-        assert(!MyStack.isEmpty());
-        assert((Integer) MyStack.pop() == 1);
-        assert(MyStack.isEmpty());
-
-        System.out.println("All tests cases passed");
     }
 }

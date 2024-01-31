@@ -1,28 +1,53 @@
 /**
+ * The `mazeGenerator` class implements the maze generator using Cellular Automaton (CA) principles inspired by Conway's Game of Life.
+ * The generator creates a maze with walls and corridors based on a randomized grid and applies rules to organize the grid into a maze pattern.
+ * The class includes methods for running the CA rules, calculating the diagonal and Neumann neighborhoods, and introducing a delay between iterations.
+ *
  * @author Maximilien Notz
  */
 public class mazeGenerator
 {
+    /**
+     * The maze grid used for generating the maze.
+     */
     private Grid maze;
-    private short Size;
-    private short stepsCount;
 
+    /**
+     * The size of the maze grid.
+     */
+    private short Size;
+
+    /**
+     * The count of generation (iterations) taken by the Cellular Automaton.
+     */
+    private short generationCount;
+
+    /**
+     * Constructor for the `mazeGenerator` class.
+     *
+     * @param Size The size of the maze grid.
+     */
     public mazeGenerator(int Size)
     {
         this.Size = (short)Size;
         this.maze = new Grid(Size, Size, 7, 0);
         this.maze.randomizeMaze();
-        this.stepsCount = 0;
+        this.generationCount = 0;
     }
 
+    /**
+     * Runs the Cellular Automaton rules for a specified number of steps.
+     *
+     * @param n The number of generations to run the rules.
+     */
     public void runRules(int n)
     {
         maze.setTitle("Cellular Automaton");
-        n += stepsCount;
+        n += generationCount;
         // revers the chaos
         short DNCount; // diagonal neighborhood count
         short NNCount; // neumann neighborhood count
-        for(; stepsCount < n; ++stepsCount)
+        for(; generationCount < n; ++generationCount)
         {
             sleep((short) 250);
             for (short x = 1; x < Size - 1; ++x)
@@ -42,7 +67,7 @@ public class mazeGenerator
                     }
                     else
                     {
-                        if (DNCount == 4 && NNCount == 3 && stepsCount > 10);
+                        if (DNCount == 4 && NNCount == 3 && generationCount > 10);
                         else if(NNCount > 2 || DNCount == 0 || DNCount + NNCount < 4)
                         {
                             maze.setAt(x, y, true);
@@ -54,6 +79,13 @@ public class mazeGenerator
         }
     }
 
+    /**
+     * Calculates the diagonal neighborhood count for a given cell.
+     *
+     * @param x The x-coordinate of the cell a short data type.
+     * @param y The y-coordinate of the cell a short data type.
+     * @return The count of neighboring cells in the diagonal directions.
+     */
     public short diagonalNeighborhood(short x, short y)
     {
         short count = 0;
@@ -67,6 +99,14 @@ public class mazeGenerator
         return count;
     }
 
+
+    /**
+     * Calculates the Neumann neighborhood count for a given cell.
+     *
+     * @param x The x-coordinate of the cell in a short data type.
+     * @param y The y-coordinate of the cell in a short data type.
+     * @return The count of neighboring cells in the Neumann directions.
+     */
     private short neumannNeighborhood(short x, short y)
     {
         short count = 0;
@@ -80,6 +120,11 @@ public class mazeGenerator
         return count;
     }
 
+    /**
+     * Introduces a delay for a specified time.
+     *
+     * @param time The duration of the delay in milliseconds.
+     */
     private void sleep(short time)
     {
         try
