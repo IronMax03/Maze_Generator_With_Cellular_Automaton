@@ -45,16 +45,27 @@ Each state as a set of rules which determine the state of the cell for the next 
    1. If the `diagonal Neighbors count` is equal to `4`and the `Von Neumann Neighborhood count` is equal to `3` and the generation count is bigger than 10 then the state doesn't change.
    2. Else If the `Von Neumann Neighborhood count` is lower than 2 or `diagonal Neighbors count` is equal to 0 or the `Moore neighborhood count` is lower than 4, then the cell become a corridor(True).
 
+## Further improvement
+1. Make it solvable
+   The most important improvement I can add is to make the maze solvable. I intend to do it with some kind of agent.
+   
+   
+
+2. CA termination condition
+   An other improvement I can add is to stop the CA when the grid is only made by stable patterns and [Oscillator](https://en.wikipedia.org/wiki/Oscillator_(cellular_automaton)).
+An Oscillator is a pattern that is constantly looping from one state to another. 
+My idea is to calculate the percentage of difference between each generation and if this number drops under a certain value terminate the CA.
+
 ## Usage
 
-This project is designed to run with Oracle [OpenJDK 20](https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html).
+This project is designed to run with Oracle [OpenJDK 20](https://www.oracle.com/java/technologies/javase/jdk20-archive-downloads.html). All the code is located in the scr file. 
+The file named Agent is not useful for running the program because it is work in progress. 
 
 ### Running the Project
 1. To compile the project and then execute the "Main.java" File.
 2. A window will appear with the randomize grid.
 3. The CA should start 4 seconds after the randomize grid.
 4. After a certain amount of generation the CA will stop allowing you to
-
 
 ## Acknowledgments
 
