@@ -6,14 +6,14 @@ A maze generator implemented using Cellular Automaton (CA) inspired by Conway's 
 ### Project Background
 This an old project I used as an HelloWorld for my gitHub.
 It was in 2020 when I was learning Java. I had a homework which was to create a maze generator. I came up with solution using a [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton)(Also called CA) inspired by the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). 
-My idea was find some CA rules which keep the paterns that actually made the gride look like a maze and invert the cell state if the patern isnt apropriete.
-The process of finding this rules was to draw on a peace of paper all the maze paterns that came to mind and trying to describe them whith the Neighborhood count(this will be detailled later in this page). Then I tried those rules and did played whith it to see if a could get a better result. This aproach using both rational and empirical aproach aloud me getting a good result.
-I created this repository to share this fun aproach of maze generator.
+My idea was find some CA rules which keep the patterns that actually made the grid look like a maze and invert the cell state if the pattern isn't appropriate.
+The process of finding this rules was to draw on a piece of paper all the maze patterns that came to mind and trying to describe them with the Neighborhood count(this will be detailed later in this page). Then I tried those rules and did play with it to see if I could get a better result. This approach using both rational and empirical approach aloud me getting a good result.
+I created this repository to share this fun approach of maze generator.
 
 
 ### Algorithm
 - The CA begin with a randomized grid. Black cells are walls and the white ones are corridors. 
-The noise generator used in the project is simply a Boolean 2D array whith a probability of $\frac{1}{2}$  being true and $\frac{1}{2}$ being false.
+The noise generator used in the project is simply a Boolean 2D array with a probability of $\frac{1}{2}$  being true and $\frac{1}{2}$ being false.
 The edges of this grid are walls except for one exit and one entrance. 
 - Then the CA starts and organize the randomize grid in an acceptable maze patterns. 
 After a certain amount of iterations the CA stops giving the resulting maze.
