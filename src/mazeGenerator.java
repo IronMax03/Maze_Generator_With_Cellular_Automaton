@@ -81,6 +81,10 @@ public class mazeGenerator
 
     /**
      * Calculates the diagonal neighborhood count for a given cell.
+     * Diagonal neighborhood([X] -> +1, [O] -> +0):<br>
+     *[X] [O] [X]<br>
+     *[O] [O] [O]<br>
+     *[X] [O] [X]<br>
      *
      * @param x The x-coordinate of the cell a short data type.
      * @param y The y-coordinate of the cell a short data type.
@@ -101,7 +105,11 @@ public class mazeGenerator
 
 
     /**
-     * Calculates the Neumann neighborhood count for a given cell.
+     * Calculates the Neumann neighborhood count for a given cell. <br>
+     * Von Neumann neighborhood([X] -> +1, [O] -> +0):<br>
+     *[O] [X] [O]<br>
+     *[X] [O] [X]<br>
+     *[O] [X] [O]<br>
      *
      * @param x The x-coordinate of the cell in a short data type.
      * @param y The y-coordinate of the cell in a short data type.
