@@ -5,7 +5,7 @@ A maze generator implemented using Cellular Automaton (CA) inspired by Conway's 
 
 ### Project Background
 This an old project I used as an HelloWorld for my gitHub.
-It was in 2020 when I was learning Java. I had a homework which was to create a maze generator. I came up with solution using a [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton)(Also called CA) inspired by the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). 
+It was back in 2020 when I was learning Java. I had a homework which was to create a maze generator. I came up with solution using a [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton)(Also called CA) inspired by the [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). 
 My idea was find some CA rules which keep the patterns that actually made the grid look like a maze and invert the cell state if the pattern isn't appropriate.
 The process of finding this rules was to draw on a piece of paper all the maze patterns that came to mind and trying to describe them with the Neighborhood count(this will be detailed later in this page). Then I tried those rules and did play with it to see if I could get a better result. This approach using both rational and empirical approach aloud me getting a good result.
 I created this repository to share this fun approach of maze generator.
